@@ -96,7 +96,7 @@ h2, h3{
 #vista-movimiento button {
     display: flex;
    margin-top: 10px;
-   margin-left: 120px;
+   margin-left: 80px;
    
     background-color: #4CAF50;
     color: white;
@@ -120,7 +120,7 @@ h2, h3{
 
 .GAD{
     margin-right: 10px;    
-    color: rgb(216, 223, 226);
+    color: rgb(216, 217, 226);
     display: inline-flex;
     align-items: center;
     margin-bottom: 20px;
@@ -147,6 +147,20 @@ h1 {
 /* ************queris**************************** */
 
 @media (max-width: 601px) {
+
+    body {
+        background: linear-gradient(#474545, #edf3ed);
+        text-align: center;
+        font-family: Arial, sans-serif;
+        height: 80vh;
+        width: 80%;
+        color: aliceblue;
+    
+       
+        
+    
+    
+    }
 
     container  {
   
