@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrador de Dinero del Hogar</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <container>
+    <h1>Contabilidad del Hogar</h1>
+
+    <!-- ****************************************** -->
+
+    <div id="menu">
+      <button onclick="mostrarVista('vista-ingreso')">Ingresar Dinero</button>
+      <button onclick="mostrarVista('vista-movimiento')">Realizar Movimiento</button>
+
+      <button onclick="mostrarVista('vista-reporte')"> Reporte de Movimientos</button>
+    </div>
+
+
+
+    <!-- **************************************** -->
+
+
+    <div id="vista-ingreso" class="vista">
+      <h2>Ingresar Dinero</h2>
+      <label for="dinero">Cantidad de dinero: </label>
+      <input type="text" id="dinero">
+      <button onclick="guardarDinero()">Guardar</button>
+    </div>
+
+    <div id="vista-movimiento" class="vista">
+      <h2>Realizar Movimiento</h2>
+      <label for="tipo-movimiento">Tipo de movimiento: </label>
+      <select id="tipo-movimiento">
+        <option value="deposito">Depósito</option>
+        <option value="retiro">Retiro</option>
+
+      </select>
+
+
+      <br>
+      <label for="parte">Parte: </label>
+      <select id="parte">
+        <option value="gastos">Gastos</option>
+        <option value="ahorro">Ahorro</option>
+        <option value="diversion">Diversión</option>
+      </select>
+      <br>
+      <label for="cantidad-movimiento">Cantidad: </label>
+      <input type="text" id="cantidad-movimiento">
+      <br>
+      <label for="motivo-movimiento">Motivo: </label>
+      <input type="text" id="motivo-movimiento">
+      <button onclick="realizarMovimiento()">Enviar Movimiento</button>
+
+    </div>
+
+
+
+
+    <div id="vista-reporte" class="vista">
+      <h2>Reporte de Movimientos</h2>
+      <button onclick="verReporteMovimientos()">Ver Reporte</button>
+
+
+
+      <h3>Reinicio protegido</h3>
+      <button onclick="resetStorage()">Restablecer almacenamiento</button>
+    </div>
+
+    <div class="saldo">
+      <h2>Saldo</h2>
+      <div class="GAD">
+        <p>Gastos: $<span id="saldo-gastos"></span></p>
+        <p> Ahorro: $<span id="saldo-ahorro"></span></p>
+        <p>Diversión: $<span id="saldo-diversion"></span></p>
+      </div>
+    </div>
+  </container>
+
+
+
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

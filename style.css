@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(#474545, #edf3ed);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+    color: aliceblue;
+
+   
+    
+
+
+}
+h2, h3{
+    color: aliceblue;
+}
+
+
+.vista {
+    display: none;
+}
+/* ******estilos para vista ingreso ctv************************** */
+
+#vista-ingreso{
+    text-align: center;
+    color: coral;
+    
+}
+#vista-ingreso label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+#vista-ingreso select {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#vista-ingreso button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#vista-ingreso button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* aqui hago los estilos para las vistas de movimientos ctv */
+
+#vista-movimiento {
+    text-align: center;
+    color: coral;
+
+}
+
+#vista-movimiento h2 {
+    font-size: 24px;
+    color: #edf3ed;
+}
+
+#vista-movimiento label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+
+#vista-movimiento select {
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#vista-movimiento button {
+    display: flex;
+   margin-top: 10px;
+   margin-left: 120px;
+   
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#vista-movimiento button:hover {
+    background-color: #45a049;
+}
+
+/* ****************************************************** */
+
+
+.saldo{
+    color: blanchedalmond;      
+}
+
+.GAD{
+    margin-right: 10px;    
+    color: rgb(216, 223, 226);
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.GAD p {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+container {
+
+    display: grid;
+    justify-content: center;
+
+    border-color: #140101;
+    background-color: rgba(1, 56, 56, 0.288);
+}
+
+h1 {
+    color: azure;
+}
+
+/* ************queris**************************** */
+
+@media (max-width: 601px) {
+
+    container  {
+  
+      width: 80%;
+      height: 60%;
+      margin: auto; 
+      
+    }
+  
+    h1{
+      font-size:small;
+      margin: 1%;  
+      padding: 0%;
+    }
+  
+   
+  
+    
+    
+    p{
+      font-size: 10px;  
+      margin: 0%;  
+      padding: 0%;
+    }
+ 
+    }
+  
+   
+    
+  
